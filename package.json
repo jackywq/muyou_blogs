@@ -2,6 +2,9 @@
   "private": true,
   "name": "react-blog-1",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
