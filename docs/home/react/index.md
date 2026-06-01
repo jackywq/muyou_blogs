@@ -12,7 +12,7 @@
 
 React 18 推荐使用 `createRoot` 替代传统的 `ReactDOM.render`，这是启用并发渲染的前提。
 
-```react
+```javascript
 // React 17 及之前的写法
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -33,7 +33,7 @@ root.render(<App />); // 支持多次调用（比如路由切换时重新渲染�
 
 **核心适用场景：**耗时的列表筛选 / 搜索
 
-```react
+```javascript
 import { useState, useTransition } from 'react';
 
 // 模拟生成10000条测试数据
@@ -114,7 +114,7 @@ export default BigListSearch;
 
 **目的：**避免 "高频状态" 持续触发，导致渲染成本变高
 
-```react
+```javascript
 import { useState, useDeferredValue } from 'react';
 
 function Search() {
@@ -301,7 +301,7 @@ useMemo 缓存的是计算结果、useCallback 缓存的是函数；
 1. 防抖：减少频繁请求（输入停顿 300ms 再发请求）
 2. 取消：发起新请求时，主动取消上一个未完成的旧请求，旧请求永远不会触发渲染
 
-```react
+```javascript
 import { useState, useCallback, useRef } from 'react';
 import axios from 'axios';
 import { debounce } from 'lodash';

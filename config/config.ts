@@ -35,6 +35,10 @@ export default defineConfig({
       path: '/home',
     },
     {
+      title: '面试题库',
+      path: '/interview',
+    },
+    {
       title: '其他网站',
       // 可通过如下形式嵌套二级导航菜单，目前暂不支持更多层级嵌套：
       children: [
@@ -159,34 +163,34 @@ export default defineConfig({
       {
         title: 'JavaScript',
         children: [
-          { title: '数据类型', path: '/interview/JavaScript/data_type' },
-          { title: '原型与继承', path: '/interview/JavaScript/prototype' },
-          { title: '作用域与闭包', path: '/interview/JavaScript/closure' },
-          { title: '事件循环', path: '/interview/JavaScript/event_loop' },
+          { title: '数据类型', path: '/interview/java-script/data_type' },
+          { title: '原型与继承', path: '/interview/java-script/prototype' },
+          { title: '作用域与闭包', path: '/interview/java-script/closure' },
+          { title: '事件循环', path: '/interview/java-script/event_loop' },
         ],
       },
       {
         title: 'React',
         children: [
-          { title: 'React Hooks', path: '/interview/React/React_Hooks' },
-          { title: '组件通信', path: '/interview/React/communication' },
-          { title: '生命周期', path: '/interview/React/life_cycle' },
+          { title: 'React Hooks', path: '/interview/react/react_hooks' },
+          { title: '组件通信', path: '/interview/react/communication' },
+          { title: '生命周期', path: '/interview/react/life_cycle' },
         ],
       },
       {
         title: 'Vue',
         children: [
-          { title: '响应式原理', path: '/interview/Vue/data' },
-          { title: '生命周期', path: '/interview/Vue/lifecycle' },
-          { title: 'Vue3特性', path: '/interview/Vue3/composition' },
+          { title: '响应式原理', path: '/interview/vue/data' },
+          { title: '生命周期', path: '/interview/vue/lifecycle' },
+          { title: 'Vue3 Composition API', path: '/interview/vue/composition' },
         ],
       },
       {
         title: '前端工程化',
         children: [
-          { title: 'Webpack', path: '/interview/webpack/webpack' },
-          { title: 'HTTP', path: '/interview/http/HTTP_HTTPS' },
-          { title: 'Git', path: '/interview/git/Git' },
+          { title: 'Webpack', path: '/interview/engineering/webpack' },
+          { title: 'HTTP', path: '/interview/engineering/http' },
+          { title: 'Git', path: '/interview/engineering/git' },
         ],
       },
     ],
