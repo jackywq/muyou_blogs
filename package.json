@@ -3,17 +3,17 @@
   "name": "react-blog-1",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "24.x"
   },
   "scripts": {
-    "start": "dumi dev",
-    "docs:build": "dumi build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider dumi dev",
+    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "build": "father-build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider umi-test",
+    "test:coverage": "NODE_OPTIONS=--openssl-legacy-provider umi-test --coverage",
     "prepublishOnly": "npm run build"
   },
   "module": "es/index.js",
